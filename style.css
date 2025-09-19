@@ -7,7 +7,7 @@ body {
 	padding: 0;
 }
 
-h3 {
+h1 {
 	color: #8e764c;
 }
 
@@ -17,6 +17,21 @@ h4 {
 
 p {
 	color: #8e764c;
+}
+
+.btn {
+	color: white;
+	background-color: #b45c44;
+	padding: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.transparent-header {
+	font-size: 100px;
+	font-weight: 800;
+	color: transparent;
+	-webkit-text-stroke: 1px white;
 }
 
 .header {
@@ -58,17 +73,14 @@ p {
 	text-align: center;
 }
 
-.transparent-header {
+.hero-container .transparent-header {
 	font-size: 200px;
-	font-weight: 800;
-	color: transparent;
-	-webkit-text-stroke: 1px white;
 	margin: 0;
 	display: inline-block;
 	position: relative;
 }
 
-.helper-text {
+.hero-container .helper-text {
 	position: absolute;
 	top: 45%;
 	left: 38%;
@@ -108,7 +120,319 @@ p {
 	font-size: 50px;
 }
 
-.description {
+.about-text {
 	color: #8e764c;
 	font-size: 25px;
+}
+
+.green-bar {
+	padding: 8px;
+	background-color: #626a4d;
+}
+
+.darkgreen-bar {
+	padding: 6px;
+	background-color: #333b1e;
+}
+
+.lightgreen-bar {
+	padding: 40px;
+	background-color: #d5dbca;
+}
+
+.greenbrown-bar {
+	padding: 20px;
+	background-color: #cbccb5;
+}
+
+.product-container {
+	background-color: white;
+	padding-top: 100px;
+}
+
+.tiffin-adventure {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #3e403a;
+}
+
+.tiffin-adventure .pipe-wrap {
+	justify-content: left;
+	margin-left: 13%;
+}
+
+
+.tiffin-adventure .pipe {
+	font-size: 25px;
+}
+
+.tiffin-adventure h2 {
+	text-decoration: none;
+	color: white;
+	text-align: left;
+}
+
+.tiffin-adventure-image {
+	padding: 20px 0px 0px 0px;
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+}
+
+.tiffin-adventure p {
+	padding: 9px 0px 0px 10px;
+	color: white;
+	font-size: 15px;
+}
+
+#tiffin-wrap-2 {
+	justify-content: end;
+	margin-right: 12%;
+}
+
+.tiffin-icon {
+	padding-top: 20px;
+}
+
+.explore {
+	position: relative;
+	text-align: center;
+}
+
+.explore img {
+	width: 100%;
+	display: block;
+}
+
+.explore-text {
+	position: absolute;
+	top: 65%;
+	left: 5%;
+	z-index: 2;
+	color: white;
+}
+
+.explore h1 {
+	font-size: 50px;
+	padding: 0px 22% 30px 22%;
+	color: white;
+	margin: 0;
+}
+
+.community {
+	padding: 50px 60px;
+	background-color: #f3ede4;
+	text-align: center;
+}
+
+.community .pipe {
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.community h1 {
+	font-weight: 900;
+}
+
+.community-cards {
+	display: flex;
+	padding: 0px 200px 50px 200px;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: left;
+	gap: 2rem;
+}
+
+.community p {
+	color: black;
+	font-weight: bold;
+}
+
+.card .title {
+	font-size: 15px;
+}
+
+.card .description {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.card a {
+	text-decoration: none;
+	color: #b45c44;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.eventdealers-container {
+	display: flex;
+	gap: 40px;
+	align-items: flex-start;
+}
+
+.eventdealers-container .btn {
+	background-color: #f3ede4;
+	color: #3e403a;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.events,
+.dealers {
+	flex: 1 1 0;
+	min-width: 0;
+	box-sizing: border-box;
+}
+
+.events {
+	position: relative;
+	background-color: #b45c44;
+	padding-bottom: 20%;
+}
+
+.events-inner {
+	padding-left: 185px;
+	position: absolute;
+	top: 49%;
+	z-index: 2;
+	text-align: left;
+}
+
+.events .tour-image {
+	width: 100%;
+	height: 400px;
+}
+
+.events .transparent-header {
+	margin: 0px 0px -30px -7px;
+}
+
+.events .helper-text {
+	color: white;
+	padding-bottom: 20px;
+}
+
+.events .description {
+	color: white;
+	font-size: 14px;
+	padding: 10px 70px 0px 0px;
+}
+
+.dealers {
+	position: relative;
+}
+
+.dealers img {
+	width: 100%;
+	padding-top: 100px;
+}
+
+.dealers-inner {
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	z-index: 2;
+}
+
+.dealers .transparent-header {
+	margin-bottom: 20px;
+}
+
+.footer {
+	background-color: #040403;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+.footer-content {
+	margin: 0px 13%;
+}
+
+.footer a img {
+	display: block;
+	height: 20px;
+}
+
+.footer .footer-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .f-nav {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15px;
+}
+
+.footer .f-nav .btn {
+	background: none;
+	padding: 0;
+	color: #949592;
+}
+
+.footer .f-nav .pipe {
+	font-size: 20px;
+}
+
+.footer .contact-form {
+	color: white;
+	padding-top: 30px;
+	padding-right: 50px;
+}
+
+.contact-form .pipe-wrap {
+	border-left: 1px solid #fff;
+	padding-left: 20px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.contact-form .header {
+	font-size: 20px;
+	color: #949592;
+	background: none;
+	margin: 0px 30x 20px 0px;
+}
+
+.input-forms {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-bottom: 40px;
+}
+
+.contact-form input {
+	background-color: transparent;
+	padding: 15px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-form .btn {
+	color: #3e403a;
+	background-color: #949592;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.social-media {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	margin-left: 14%;
+	padding-top: 50px;
+}
+
+.social-media img {
+	max-width: 20px;
+}
+
+.copyright-text {
+	padding-top: 30px;
+	margin-left: 14%;
+	color: #949592;
+	font-size: 10px;
 }
