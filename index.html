@@ -2,190 +2,256 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tiffin</title>
-	<link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiffin</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="index.js"></script>
 </head>
 
 <body>
-	<div class="header">
-		<a href="/" class="logo">
-			<img src="assets/img/logo.png" alt="tiffin logo">
-		</a>
-		<div class="pipe-wrap">
-			<div class="pipe">|</div>
-			<a href="/" class="nav">EXPLORE</a>
-		</div>
-	</div>
-	<video class="background-video" autoplay loop muted>
-		<source src="assets/img/tiffin-loop.mp4" type="video/mp4">
-	</video>
-	<div class="hero-container">
-		<div class="transparent-header">START</div>
-		<h4 class="helper-text"><span class="behind">YOUR ADVENTURE</span></h4>
-	</div>
-	<div class="hero-text-container">
-		<div class="hero-text">
-			<div class="pipe-wrap">
-				<div class="pipe">|</div>
-				<h1 class="section-text">REDEFINING OVERLAND LUXURY</h1>
-			</div>
-			<div class="about-text">With Tiffin Adventure, every horizon is an invitation to embrace freedom
-				without
-				limits. Rugged
-				power
-				with refined interiors, so you can roam farther and rest deeper-no matter where the road takes
-				you.</div>
-		</div>
-	</div>
-	<div class="green-bar"></div>
-	<div class="darkgreen-bar"></div>
-	<div class="lightgreen-bar"></div>
-	<div class="product-container"><img src="assets/img/products.png" alt="products-image" /></div>
-	<div class="tiffin-adventure">
-		<div class="pipe-wrap">
-			<div class="pipe">|</div>
-			<h2>Experience Tiffin Adventure</h2>
-		</div>
-		<img class="tiffin-adventure-image" src="assets/img/tiffin-adventure.png" alt="tiffin-adventure-image" />
-		<div id="tiffin-wrap-2" class="pipe-wrap">
-			<div class="pipe">|</div>
-			<h2>GH1</h2>
-			<p>ADVENTURE VAN</p>
-			<img class="tiffin-icon" src="assets/img/icon.png" alt="tiffin-icon" />
-		</div>
-	</div>
-	<div class="explore">
-		<img src="assets/img/tiffin.jpg" alt="tiffinrv" />
-		<div class="explore-text">
-			<h1>TAKING "ROUGHING IT" OUT OF ADVENTURE.</h1>
-			<a class="btn" href="/">EXPLORE YOURS</a>
-		</div>
-	</div>
-	<div class="green-bar"></div>
-	<div class="darkgreen-bar"></div>
-	<div class="greenbrown-bar"></div>
-	<div class="community">
-		<div class="pipe-wrap">
-			<div class="pipe">|</div>
-			<h1>OUR COMMUNITY</h1>
-		</div>
-		<div class="community-cards">
-			<div class="card">
-				<img src="assets/img/img-card-1.png" alt="tiffin-rv-1" />
-				<p class="date"><strong>Sep 02, 2025</strong></p>
-				<p class="title">Galactic Adventures</p>
-				<p class="description">Beyond the Van, Into the Alps, Wildfire in Tahoe National Forest. Holiday OFF-Road:
-					Summer Postcards. <br />
-					Featured
-					photo by <strong>John Kelly</strong></p>
-				<a href="/">READ STORY &#8594</a>
-			</div>
-			<div class="card">
-				<img src="assets/img/img-card-2.png" alt="tiffin-rv-2" />
-				<p class="date">Sep 02, 2025</p>
-				<p class="title">Galactic Adventures</p>
-				<p class="description">Beyond the Van, Into the Alps, Wildfire in Tahoe National Forest. Holiday OFF-Road:
-					Summer Postcards. <br />
-					Featured
-					photo by <strong>John Kelly</strong></p>
-				<a href="/">READ STORY &#8594</a>
-			</div>
-			<div class="card">
-				<img src="assets/img/img-card-3.png" alt="tiffin-rv-3" />
-				<p class="date"><strong>Sep 02, 2025</strong></p>
-				<p class="title">Galactic Adventures</p>
-				<p class="description">Beyond the Van, Into the Alps, Wildfire in Tahoe National Forest. Holiday OFF-Road:
-					Summer Postcards. <br />
-					Featured
-					photo by <strong>John Kelly</strong></p>
-				<a href="/">READ STORY &#8594</a>
-			</div>
-		</div>
-		<a class="btn" href="/">MORE STORIES</a>
-	</div>
-	<div class="eventdealers-container">
-		<div class="events">
-			<img class="tour-image" src="assets/img/tour.jpg" alt="tour-image" />
-			<div class="events-inner">
-				<div class="transparent-header">EXPLORE</div>
-				<h3 class="helper-text">EVENTS</h3>
-				<a class="btn">UPCOMING</a>
-				<p class="description">Join us at exclusive events, tours, and world-renowned shows to experience what Tiffin
-					Adventures is all
-					about.</p>
-			</div>
-		</div>
-		<div class="dealers">
-			<img src="assets/img/map.png" alt="map" />
-			<div class="dealers-inner">
-				<div class="transparent-header">FIND A DEALER</div>
-				<a class="btn">EXPLORE</a>
-			</div>
-		</div>
-	</div>
-	<script src="index.js"></script>
+  <div class="header">
+    <a href="/" class="logo">
+      <img src="assets/img/logo.png" alt="tiffin logo">
+    </a>
+    <div class="pipe-wrap">
+      <div class="pipe">|</div>
+      <button id="nav-button" onclick="toggleDropdown()" class="nav">EXPLORE</button>
+    </div>
+  </div>
+  <div id="dropdown" class="nav-content">
+    <div class="image-container">
+      <img class="nav-background" src="assets/img/nav.png" />
+    </div>
+    <div class="nav-options">
+      <div class="nav-options-1">
+        <div class="options-wrap">
+          <div class="pipe-wrap">
+            <div class="pipe">|</div>
+            <h2>MODELS</h2>
+          </div>
+          <a class="nav-option">GH1</a>
+          <a class="nav-option">GH2</a>
+          <a class="nav-option">Open Trail</a>
+        </div>
+        <div class="options-wrap">
+          <div class="pipe-wrap">
+            <div class="pipe">|</div>
+            <h2>COMMUNITY</h2>
+          </div>
+          <a class="nav-option">Events</a>
+          <a class="nav-option">Submit your story</a>
+          <a class="nav-option">Blog</a>
+          <a class="nav-option">Resources</a>
+        </div>
+        <div class="options-wrap">
+          <div class="pipe-wrap">
+            <div class="pipe">|</div>
+            <h2>SERVICE</h2>
+          </div>
+          <a class="nav-option">Service Center</a>
+          <a class="nav-option">Owl Outdoors</a>
+        </div>
+      </div>
+      <div class="nav-options-2">
+        <div class="nav-options-2-left">
+          <div class="options-wrap">
+            <div class="pipe-wrap">
+              <div class="pipe">|</div>
+              <h2>TIFFIN DIFFERENCE</h2>
+            </div>
+            <a class="nav-option">Factory Tour</a>
+          </div>
+        </div>
+        <div class="nav-options-2-right">
+          <div class="options-wrap">
+            <div class="pipe-wrap">
+              <div class="pipe">|</div>
+              <h2>SHOP</h2>
+            </div>
+            <a class="nav-option">Find a Dealer</a>
+            <a class="nav-option">Merchandise</a>
+          </div>
+          <div class="options-wrap">
+            <div class="pipe-wrap">
+              <div class="pipe">|</div>
+              <h2>CONTACT US</h2>
+            </div>
+            <a class="nav-option">Newsletter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="video-container">
+    <video class="background-video" autoplay loop muted>
+      <source src="assets/img/tiffin-loop.mp4" type="video/mp4">
+    </video>
+    <div class="hero-header-text">
+      <img class="start-header" src="assets/img/START.png" />
+      <h4 class="helper-text">YOUR ADVENTURE</h4>
+    </div>
+  </div>
+  <div class="hero-text-container">
+    <div class="hero-text">
+      <div class="pipe-wrap">
+        <div class="pipe">|</div>
+        <h1 class="section-text">REDEFINING OVERLAND LUXURY</h1>
+      </div>
+      <div class="about-text">With Tiffin Adventure, every horizon is an invitation to embrace freedom
+        without
+        limits. Rugged
+        power
+        with refined interiors, so you can roam farther and rest deeper-no matter where the road takes
+        you.</div>
+    </div>
+  </div>
+  <div class="green-bar"></div>
+  <div class="darkgreen-bar"></div>
+  <div class="lightgreen-bar"></div>
+  <div class="product-container"><img src="assets/img/products.png" alt="products-image" /></div>
+  <div class="tiffin-adventure">
+    <div class="pipe-wrap">
+      <div class="pipe">|</div>
+      <h2>Experience Tiffin Adventure</h2>
+    </div>
+    <img class="tiffin-adventure-image" src="assets/img/tiffin-adventure.png" alt="tiffin-adventure-image" />
+    <div id="tiffin-wrap-2" class="pipe-wrap">
+      <div class="pipe">|</div>
+      <h2>GH1</h2>
+      <p>ADVENTURE VAN</p>
+      <img class="tiffin-icon" src="assets/img/icon.png" alt="tiffin-icon" />
+    </div>
+  </div>
+  <div class="explore">
+    <img src="assets/img/tiffin.jpg" alt="tiffinrv" />
+    <div class="explore-text">
+      <h1>TAKING "ROUGHING IT" OUT OF ADVENTURE.</h1>
+      <a class="btn" href="/">EXPLORE YOURS</a>
+    </div>
+  </div>
+  <div class="green-bar"></div>
+  <div class="darkgreen-bar"></div>
+  <div class="greenbrown-bar"></div>
+  <div class="community">
+    <div class="pipe-wrap">
+      <div class="pipe">|</div>
+      <h1>OUR COMMUNITY</h1>
+    </div>
+    <div class="community-cards">
+      <div class="card">
+        <img src="assets/img/img-card-1.png" alt="tiffin-rv-1" />
+        <p class="date"><strong>Sep 02, 2025</strong></p>
+        <p class="title">Galactic Adventures</p>
+        <p class="description">Beyond the Van, Into the Alps, Wildfire in Tahoe National Forest. Holiday OFF-Road:
+          Summer Postcards. <br />
+          Featured
+          photo by <strong>John Kelly</strong></p>
+        <a href="/">READ STORY &#8594</a>
+      </div>
+      <div class="card">
+        <img src="assets/img/img-card-2.png" alt="tiffin-rv-2" />
+        <p class="date">Sep 02, 2025</p>
+        <p class="title">Galactic Adventures</p>
+        <p class="description">Beyond the Van, Into the Alps, Wildfire in Tahoe National Forest. Holiday OFF-Road:
+          Summer Postcards. <br />
+          Featured
+          photo by <strong>John Kelly</strong></p>
+        <a href="/">READ STORY &#8594</a>
+      </div>
+      <div class="card">
+        <img src="assets/img/img-card-3.png" alt="tiffin-rv-3" />
+        <p class="date"><strong>Sep 02, 2025</strong></p>
+        <p class="title">Galactic Adventures</p>
+        <p class="description">Beyond the Van, Into the Alps, Wildfire in Tahoe National Forest. Holiday OFF-Road:
+          Summer Postcards. <br />
+          Featured
+          photo by <strong>John Kelly</strong></p>
+        <a href="/">READ STORY &#8594</a>
+      </div>
+    </div>
+    <a class="btn" href="/">MORE STORIES</a>
+  </div>
+  <div class="eventdealers-container">
+    <div class="events">
+      <img class="tour-image" src="assets/img/tour.jpg" alt="tour-image" />
+      <div class="events-inner">
+        <div class="transparent-header">EXPLORE</div>
+        <h3 class="helper-text">EVENTS</h3>
+        <a class="btn">UPCOMING</a>
+        <p class="description">Join us at exclusive events, tours, and world-renowned shows to experience what Tiffin
+          Adventures is all
+          about.</p>
+      </div>
+    </div>
+    <div class="dealers">
+      <img src="assets/img/map.png" alt="map" />
+      <div class="dealers-inner">
+        <div class="transparent-header">FIND A DEALER</div>
+        <a class="btn">EXPLORE</a>
+      </div>
+    </div>
+  </div>
 </body>
 <footer class="footer">
-	<div class="footer-content">
-		<a href="/">
-			<img src="assets/img/tiffin-adventure-logo-white.svg" alt="tiffin logo">
-		</a>
-		<div class="footer-wrap">
-			<div class="f-nav">
-				<div class="pipe-wrap">
-					<div class="pipe">|</div>
-					<a class="btn">MODELS</a>
-				</div>
-				<div class="pipe-wrap">
-					<div class="pipe">|</div>
-					<a class="btn">COMMUNITY</a>
-				</div>
-				<div class="pipe-wrap">
-					<div class="pipe">|</div>
-					<a class="btn">SERVICE</a>
-				</div>
-				<div class="pipe-wrap">
-					<div class="pipe">|</div>
-					<a class="btn">TIFFIN DIFFERENCE</a>
-				</div>
-				<div class="pipe-wrap">
-					<div class="pipe">|</div>
-					<a class="btn">SHOP</a>
-				</div>
-				<div class="pipe-wrap">
-					<div class="pipe">|</div>
-					<a class="btn">CONTACT US</a>
-				</div>
-			</div>
-			<div class="contact-form">
-				<div class="pipe-wrap">
-					<h2 class="header">STAY CONNECTED</h2>
-					<div class="input-forms">
-						<input type="text" placeholder="Name" />
-						<input type="text" placeholder="Email" />
-					</div>
-					<a class="btn">CONNECT</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="social-media">
-		<a>
-			<img src="assets/img/instagram.png" />
-		</a>
-		<a>
-			<img src="assets/img/facebook.png" />
-		</a>
-		<a>
-			<img src="assets/img/youtube.png" />
-		</a>
-		<a>
-			<img src="assets/img/linkedin.png" />
-		</a>
-	</div>
-	<p class="copyright-text">&copy Tiffin Motorhomes, Inc. All Rights Reserved.</p>
+  <div class="footer-content">
+    <a href="/">
+      <img src="assets/img/tiffin-adventure-logo-white.svg" alt="tiffin logo">
+    </a>
+    <div class="footer-wrap">
+      <div class="f-nav">
+        <div class="pipe-wrap">
+          <div class="pipe">|</div>
+          <a class="btn">MODELS</a>
+        </div>
+        <div class="pipe-wrap">
+          <div class="pipe">|</div>
+          <a class="btn">COMMUNITY</a>
+        </div>
+        <div class="pipe-wrap">
+          <div class="pipe">|</div>
+          <a class="btn">SERVICE</a>
+        </div>
+        <div class="pipe-wrap">
+          <div class="pipe">|</div>
+          <a class="btn">TIFFIN DIFFERENCE</a>
+        </div>
+        <div class="pipe-wrap">
+          <div class="pipe">|</div>
+          <a class="btn">SHOP</a>
+        </div>
+        <div class="pipe-wrap">
+          <div class="pipe">|</div>
+          <a class="btn">CONTACT US</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="pipe-wrap">
+          <h2 class="header">STAY CONNECTED</h2>
+          <div class="input-forms">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <a class="btn">CONNECT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="social-media">
+    <a>
+      <img src="assets/img/instagram.png" />
+    </a>
+    <a>
+      <img src="assets/img/facebook.png" />
+    </a>
+    <a>
+      <img src="assets/img/youtube.png" />
+    </a>
+    <a>
+      <img src="assets/img/linkedin.png" />
+    </a>
+  </div>
+  <p class="copyright-text">&copy Tiffin Motorhomes, Inc. All Rights Reserved.</p>
 </footer>
 
 </html>
