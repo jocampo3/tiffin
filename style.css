@@ -36,10 +36,6 @@ button {
   padding: 10px;
   font-weight: bold;
   text-decoration: none;
-  background-color: #b45c44;
-  padding: 10px;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 .header {
@@ -55,9 +51,12 @@ button {
   border: none;
   text-decoration: none;
   color: white;
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.header img {
+  width: 14rem;
 }
 
 .nav-content {
@@ -161,28 +160,16 @@ button {
   position: relative;
 }
 
-.start-header {
-  width: 50%;
-}
 
 .hero-header-text {
   position: absolute;
   bottom: -10px;
   width: 100%;
   z-index: 3;
-  =======position: relative;
 }
 
 .start-header {
   width: 50%;
-}
-
-.hero-header-text {
-  position: absolute;
-  bottom: -10px;
-  width: 100%;
-  z-index: 3;
-  >>>>>>>4756e39ff93d5621e93a426a55b4cd056e7c2725
 }
 
 .hero-text-container {
@@ -215,7 +202,7 @@ button {
 .header .pipe {
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 .nav {
@@ -258,9 +245,73 @@ button {
   background-color: #cbccb5;
 }
 
-.product-container {
+.products-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
-  padding-top: 100px;
+  padding: 100px;
+  gap: 60px;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s ease;
+}
+
+.product-container img {
+  transition: transform 0.6s ease;
+}
+
+.product-container h2 {
+  color: #3e4039;
+  font-weight: 800;
+}
+
+.product-container .pipe {
+  font-size: 20px;
+  font-weight: 800;
+  padding-right: 6px;
+}
+
+.product-container p {
+  color: #3e4039;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-top: 10px;
+}
+
+.product-container .learn-more {
+  font-size: 4px;
+  padding: 0;
+}
+
+.product-container:hover {
+  transform: translateY(-15px) scale(1);
+}
+
+.product-container:hover img {
+  transform: scale(1.15);
+}
+
+.product-container .description {
+  text-align: center;
+  background-color: #c3563d;
+  padding: 0px 5px 10px 5px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.product-container:hover .description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-container .description p {
+  color: white;
+  padding: 0px 0px 10px 0px;
 }
 
 .tiffin-adventure {
@@ -319,17 +370,26 @@ button {
 
 .explore-text {
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 5%;
   z-index: 2;
   color: white;
 }
 
 .explore h1 {
-  font-size: 50px;
+  font-size: 4vw;
   padding: 0px 22% 30px 22%;
   color: white;
   margin: 0;
+}
+
+.explore a {
+  color: #f4ede3;
+}
+
+.explore .btn {
+  font-size: 2vw;
+  padding: 0.6rem;
 }
 
 .community {
