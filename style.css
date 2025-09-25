@@ -32,7 +32,10 @@ button {
 }
 
 .btn {
-  color: white;
+  background-color: #b45c44;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
   background-color: #b45c44;
   padding: 10px;
   font-weight: bold;
@@ -167,6 +170,19 @@ button {
   bottom: -10px;
   width: 100%;
   z-index: 3;
+  =======position: relative;
+}
+
+.start-header {
+  width: 50%;
+}
+
+.hero-header-text {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  z-index: 3;
+  >>>>>>>4756e39ff93d5621e93a426a55b4cd056e7c2725
 }
 
 .hero-text-container {
