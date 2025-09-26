@@ -1,0 +1,57 @@
+@media screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden !important;
+  }
+
+  body {
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header img {
+    width: 10rem;
+  }
+
+  .header .pipe {
+    display: none;
+  }
+
+  .header #nav-button {
+    display: none;
+  }
+
+  .header #hamburger {
+    display: block;
+  }
+
+  .hero-header-text {
+    left: 60px;
+  }
+
+  .hero-header-text .helper-text {
+    top: 0;
+  }
+
+  .hero-text-container .pipe {
+    font-size: 4.2vw;
+  }
+
+  .hero-text-container {
+    padding: 25px 0px 75px 0px;
+  }
+
+  .products-container {
+    flex-direction: column;
+  }
+
+  .explore-text {
+    top: 65%;
+  }
+
+  .community-cards {
+    flex-direction: column;
+    padding: 0px;
+    padding-bottom: 50px;
+  }
+}
