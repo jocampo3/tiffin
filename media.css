@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   html {
     overflow-x: hidden !important;
   }
@@ -26,6 +26,32 @@
     display: block;
   }
 
+  .nav-background {
+    display: none;
+  }
+
+  .nav-options {
+    display: flex;
+    flex-direction: column;
+    position: unset;
+  }
+
+  .nav-options-1 {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .nav-options-2 {
+    display: block;
+    margin: 0px 0px 10px 10px;
+  }
+
+  .nav-options-2-right:nth-child(2) {
+    display: block;
+    margin-left: 0px;
+
+  }
+
   .hero-header-text {
     left: 60px;
   }
@@ -44,6 +70,10 @@
 
   .products-container {
     flex-direction: column;
+  }
+
+  #tiffin-wrap-2 {
+    margin-top: 20px;
   }
 
   .explore-text {
